@@ -6,36 +6,34 @@ A console-based address book application built using **singly linked list** in J
 
 ## Features
 
-- Add new contacts with name, phone number, and email
-- Delete existing contacts by name
-- Search for contacts
-- Update contact details
-- Menu-driven user interface in terminal
-- Efficient memory management using linked list
+-  Add Contact
+-  Search Contact
+-  Update Contact
+-  Delete Contact
+-  Display All Contacts
+-  Save to File on Exit
+-  Load from File on Start
+-  Duplicate & invalid entries are handled gracefully
 
 ---
 
 ## Technologies Used
 
 - Java (JDK 8+)
-- Linked List Data Structure
-- File I/O for data persistence
-- Terminal / Command Line Interface (CLI)
+- Singly Linked List Data Structure
+- File I/O for data storage (`contacts.txt`)
+- Terminal / Command Line Interface
 
 ---
 
 ##  Project Structure
-Address-Book-using-LinkedList/
+AddressBookProject/
 │
-├── src/
-│   ├── Contact.java           # Contact class (model for contacts)
-│   ├── AddressBook.java       # Core linked list functionality (add, delete, search, etc.)
-│   └── AddressBookApp.java    # Main class with menu and user interaction
-│
-├── contacts.txt               # File to save/load contacts (created at runtime)
-├── README.md                  # Project documentation
-└── .gitignore                 # Git ignore file
-
+├── Contact.java // Contact class (name, phone, link)
+├── AddressBook.java // Core linked list operations
+├── AddressBookApp.java // Main program with menu
+├── contacts.txt // Contact storage file (created at runtime)
+└── README.md // Project documentation
 ---
 
 ## Address Book Menu 
@@ -63,10 +61,15 @@ Address-Book-using-LinkedList/
  ---
 
  ## Error Handling & Validation
--Prompts user if contact not found during delete or update
--Prevents crashes using try-catch where needed
--Handles empty input and basic format issues
--Duplicate contact names can be prevented or flagged (optional)
+
+-Prevents empty names or phone numbers
+
+-Validates phone format (10 digits only)
+
+-Duplicate names are blocked
+
+-Handles missing files and exceptions gracefully
+
 
 ---
 
@@ -117,7 +120,7 @@ Address-Book-using-LinkedList/
 
 ---
 
- Now just replace the content in your existing `README.md` with this version. Let me know once you're done or if you want help checking your Java code next.
+This project is created for educational purposes.
 
 ---
 
