@@ -6,47 +6,54 @@ public class AddressBookApp {
         AddressBook book = new AddressBook();
         String filename = "contacts.txt";
 
-        book.loadFromFile(filename); // Load contacts at start
+        book.loadFromFile(filename);
 
         while (true) {
-            System.out.println("\nAddress Book Menu:");
+            System.out.println("\n------ Address Book Menu ------");
             System.out.println("1. Add Contact");
             System.out.println("2. Search Contact");
             System.out.println("3. Delete Contact");
-            System.out.println("4. Display Contacts");
-            System.out.println("5. Save and Exit");
-            System.out.print("Choose an option: ");
+            System.out.println("4. Update Contact");
+            System.out.println("5. Display Contacts");
+            System.out.println("6. Save and Exit");
+            System.out.print("Choose an option (1-6): ");
 
-            int option = scanner.nextInt();
-            scanner.nextLine(); // consume newline
-
-            switch (option) {
-                case 1:
+            String input = scanner.nextLine();
+            switch (input) {
+                case "1":
                     System.out.print("Enter name: ");
                     String name = scanner.nextLine();
-                    System.out.print("Enter phone: ");
+                    System.out.print("Enter phone (10 digits): ");
                     String phone = scanner.nextLine();
-                    book.addContact(name, phone);
+                    book.addContact(name.trim(), phone.trim());
                     break;
-                case 2:
+                case "2":
                     System.out.print("Enter name to search: ");
                     name = scanner.nextLine();
-                    book.searchContact(name);
+                    book.searchContact(name.trim());
                     break;
-                case 3:
+                case "3":
                     System.out.print("Enter name to delete: ");
                     name = scanner.nextLine();
-                    book.deleteContact(name);
+                    book.deleteContact(name.trim());
                     break;
-                case 4:
+                case "4":
+                    System.out.print("Enter name to update: ");
+                    name = scanner.nextLine();
+                    System.out.print("Enter new phone number: ");
+                    phone = scanner.nextLine();
+                    book.updateContact(name.trim(), phone.trim());
+                    break;
+                case "5":
                     book.displayContacts();
                     break;
-                case 5:
-                    book.saveToFile(filename); // Save before exit
+                case "6":
+                    book.saveToFile(filename);
                     System.out.println("Goodbye!");
+                    scanner.close();
                     return;
                 default:
-                    System.out.println("Invalid option. Try again.");
+                    System.out.println("Invalid choice. Please select between 1 and 6.");
             }
         }
     }
