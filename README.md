@@ -23,6 +23,15 @@ A console-based address book application built using **singly linked list** in J
 
 ---
 
+##  Project Structure
+Address-Book-using-LinkedList/
+├── AddressBook.java # Main menu logic and user interface
+├── LinkedList.java # Core linked list operations (add, delete, search, update)
+├── ContactNode.java # Contact node structure
+└── README.md # Documentation
+
+---
+
 ## Address Book Menu 
 
 **Add Contact**
@@ -32,6 +41,26 @@ A console-based address book application built using **singly linked list** in J
 **View All Contacts**
 **Exit**
      **Enter your choice:**
+
+---
+
+## ⚙ How to Run the Project
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/ashwanshan/Address-Book-using-LinkedList.git
+2. **Navigate to Project Folder:**
+    cd Address-Book-using-LinkedList
+3. **Compile and Run the Program:**
+    javac AddressBook.java
+    java AddressBook
+
+ ---
+
+ ## Error Handling & Validation
+-Prompts user if contact not found during delete or update
+-Prevents crashes using try-catch where needed
+-Handles empty input and basic format issues
+-Duplicate contact names can be prevented or flagged (optional)
 
 ---
 
@@ -78,7 +107,13 @@ A console-based address book application built using **singly linked list** in J
 
 ---
 
+##  License
 
+---
+
+ Now just replace the content in your existing `README.md` with this version. Let me know once you're done or if you want help checking your Java code next.
+
+---
 
 
 
