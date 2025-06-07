@@ -19,6 +19,7 @@ A console-based address book application built using **singly linked list** in J
 
 - Java (JDK 8+)
 - Linked List Data Structure
+- File I/O for data persistence
 - Terminal / Command Line Interface (CLI)
 
 ---
