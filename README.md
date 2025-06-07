@@ -26,10 +26,15 @@ A console-based address book application built using **singly linked list** in J
 
 ##  Project Structure
 Address-Book-using-LinkedList/
-├── AddressBook.java # Main menu logic and user interface
-├── LinkedList.java # Core linked list operations (add, delete, search, update)
-├── ContactNode.java # Contact node structure
-└── README.md # Documentation
+│
+├── src/
+│   ├── Contact.java           # Contact class (model for contacts)
+│   ├── AddressBook.java       # Core linked list functionality (add, delete, search, etc.)
+│   └── AddressBookApp.java    # Main class with menu and user interaction
+│
+├── contacts.txt               # File to save/load contacts (created at runtime)
+├── README.md                  # Project documentation
+└── .gitignore                 # Git ignore file
 
 ---
 
