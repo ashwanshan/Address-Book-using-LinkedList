@@ -7,6 +7,7 @@ A console-based address book application built using **singly linked list** in J
 ## Features
 
 -  Add Contact
+
 -  Search Contact
 -  Update Contact
 -  Delete Contact
