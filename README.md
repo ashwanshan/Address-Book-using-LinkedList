@@ -15,7 +15,7 @@ A console-based address book application built using **singly linked list** in J
 -  Save to File on Exit
 -  Load from File on Start
 -  Duplicate & invalid entries are handled gracefully
-
+- adress will be saveda
 ---
 
 ## Technologies Used
